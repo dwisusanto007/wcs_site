@@ -32,12 +32,12 @@ document.getElementById('header-placeholder').innerHTML = `
         <a href="index.html#strategicAlliances" class="md:px-1">Our Partners</a>
 
         <div class="flex items-center space-x-2 text-sm font-medium">
-          <a href="#" class="flex items-center gap-1 hover:text-primary" title="English">
+          <a href="index.html" class="flex items-center gap-1 text-primary font-bold" title="English">
             <span class="text-base">&#127468;&#127463;</span>
             <span>EN</span>
           </a>
           <span class="text-gray-300">|</span>
-          <a href="#" class="flex items-center gap-1 hover:text-primary" title="Bahasa Indonesia">
+          <a href="id/index.html" class="flex items-center gap-1 hover:text-primary" title="Bahasa Indonesia">
             <span class="text-base">&#127470;&#127465;</span>
             <span>ID</span>
           </a>
@@ -89,12 +89,12 @@ document.getElementById('header-placeholder').innerHTML = `
           <a href="index.html#strategicAlliances" class="flex items-center gap-2 px-4 py-3">Strategic Alliances</a>
         </li>
         <li class="border-b px-4 py-3 flex items-center gap-4 text-sm font-medium">
-          <a href="#" class="flex items-center gap-1 hover:text-primary" title="English">
+          <a href="index.html" class="flex items-center gap-1 text-primary font-bold" title="English">
             <span class="text-base">&#127468;&#127463;</span>
             <span>EN</span>
           </a>
           <span class="text-gray-300">|</span>
-          <a href="#" class="flex items-center gap-1 hover:text-primary" title="Bahasa Indonesia">
+          <a href="id/index.html" class="flex items-center gap-1 hover:text-primary" title="Bahasa Indonesia">
             <span class="text-base">&#127470;&#127465;</span>
             <span>ID</span>
           </a>

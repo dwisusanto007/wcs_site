@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | PT WAHANA CIPTASINATRIA</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="icon" id="dynamic-favicon" type="image/svg+xml">
+  <script>
+    (function () {
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="40" font-family="sans-serif" font-weight="bold" fill="#A21C21">WCS</text>
+      </svg>`;
+      document.getElementById("dynamic-favicon").setAttribute("href", "data:image/svg+xml," + encodeURIComponent(svg));
+    })();
+  </script>
+</head>
+<body class="font-inter">
+  <div id="header-placeholder"></div>
+  <script src="../js/header-id.js"></script>
+
+  <!-- Hero -->
+  <section id="homeBanner" class="relative py-8">
+    <div class="-z-10">
+      <img src="../images/banners/bg_banner_left.png" alt="hero banner kiri" class="h-[250px] md:h-[400px] absolute left-0 top-0 invisible" onload="this.classList.remove('invisible')">
+      <img src="../images/banners/bg_banner_right.png" alt="hero banner kanan" class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0 invisible" onload="this.classList.remove('invisible')">
+    </div>
+    <div class="container relative h-full">
+      <div class="flex flex-col md:flex-row items-center h-full md:gap-8">
+        <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
+          <div>
+            <h1 class="banner-title opacity-0 animate-slideInLeft delay-0">
+              Satu Integrator Jaringan,<br>Semua Kebutuhan Konektivitas Anda
+            </h1>
+            <p class="opacity-0 animate-slideInRight delay-500">
+              Dari integrasi hingga keamanan dan solusi suara, kami menghadirkan konektivitas tanpa hambatan untuk mendorong pertumbuhan bisnis Anda.
+            </p>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 mb-4 md:mb-0 md:w-[475px] md:h-[430px] flex items-center justify-center">
+          <img src="../images/banners/hero_banner.png" alt="Semua Kebutuhan Konektivitas Anda" class="h-full w-auto object-contain md:h-full invisible" onload="this.classList.remove('invisible')">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solusi & Layanan -->
+  <section id="solutionServices" class="pt-12 pb-4">
+    <div class="container mx-auto flex flex-col gap-10">
+      <div class="section-title text-center">
+        <h2 class="page-title">Solusi &amp; Layanan</h2>
+        <p>Bangun fondasi TI yang andal dan terukur dengan layanan infrastruktur kami yang disesuaikan.</p>
+      </div>
+
+      <div>
+        <!-- Tabs -->
+        <div class="flex flex-col md:flex-row space-y-1 md:space-x-4">
+          <button class="tab-btn flex-1 text-white bg-primary hover:text-white px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium" data-tab="infrastructure">Solusi Jaringan dan Infrastruktur</button>
+          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="application">Solusi Keamanan</button>
+          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="service">Solusi Layanan</button>
+          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="non-erp">Aplikasi Non-ERP</button>
+          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="electronic-security">Sistem Keamanan Elektronik</button>
+        </div>
+
+        <!-- Tab content -->
+        <div class="tab-content p-4 mt-2 md:mt-0 border border-gray-200 rounded-xl md:rounded-b-xl md:rounded-t-none overflow-auto">
+          <!-- Solusi Infrastruktur -->
+          <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto" id="infrastructure">
+            <div>
+              <h3 class="content-title mb-4 text-center">Solusi Jaringan dan Infrastruktur</h3>
+              <p class="mb-6 text-gray-700">
+                Kami merancang solusi infrastruktur dan keamanan terintegrasi yang memperkuat ketahanan, melindungi aset perusahaan, dan menjaga keunggulan operasional. Didukung oleh aliansi teknologi global dan keahlian industri, kami membantu organisasi berkembang di dunia yang didorong secara digital.
+              </p>
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div>
+                  <h4 class="font-bold mb-2">Infrastruktur &amp; Konektivitas</h4>
+                  <p class="mb-4 text-gray-600">Infrastruktur yang andal dan terukur untuk mendukung operasi perusahaan yang kritis.</p>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>Solusi Data Center, Server &amp; Storage</li>
+                    <li>Platform Virtualisasi</li>
+                    <li>Jaringan Enterprise</li>
+                    <li>Sistem Voice &amp; Contact Center</li>
+                    <ul>
+                      <li class="pl-6">- OMNI Channel</li>
+                      <li class="pl-6">- Whatsapp Terpusat</li>
+                    </ul>
+                    <li>Solusi Video Conference</li>
+                    <li>Optimasi &amp; Akselerasi WAN</li>
+                    <li>Komunikasi Radio Dua Arah</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold mb-2">Keamanan Fisik</h4>
+                  <p class="mb-4 text-gray-600">Solusi CCTV, kontrol akses, dan perimeter terintegrasi untuk keamanan 24/7.</p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solusi Keamanan -->
+          <div class="tab-panel min-h-64 overflow-auto hidden" id="application">
+            <h3 class="content-title mb-4 text-center">Layanan Keamanan</h3>
+            <p class="mb-6 text-gray-700">
+              Kami menyediakan solusi infrastruktur dan keamanan enterprise terintegrasi yang dirancang untuk mendukung lingkungan modern dan kritis. Dari jaringan yang tangguh dan keamanan siber canggih hingga integrasi cloud dan layanan terkelola, kami memastikan organisasi Anda beroperasi dengan aman, efisien, dan siap untuk pertumbuhan masa depan.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div>
+                <h4 class="font-bold mb-2">Jaringan &amp; Keamanan Siber</h4>
+                <p class="mb-4 text-gray-600">Perlindungan menyeluruh di seluruh jaringan, aplikasi, endpoint, dan lingkungan data Anda.</p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>Next-Generation Firewall (NGFW)</li>
+                  <li>Web Application Firewall (WAF)</li>
+                  <li>Advanced Threat Protection</li>
+                  <li>Advanced Endpoint Protection (EPP + EDR)</li>
+                  <li>Network Access Control (NAC)</li>
+                  <li>Database Security</li>
+                  <li>Privileged Access Security</li>
+                  <li>Vulnerability Management</li>
+                  <li>Next-Generation SIEM</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Cloud, Layanan Terkelola &amp; Assurance</h4>
+                <p class="mb-4 text-gray-600">Dukungan berkelanjutan dan layanan strategis untuk memastikan kinerja, kepatuhan, dan ketahanan jangka panjang.</p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>Solusi Cloud</li>
+                  <li>Layanan Terkelola</li>
+                  <li>Integrasi DevSecOps</li>
+                  <li>Pemantauan Keamanan &amp; Mitigasi Risiko</li>
+                  <li>Platform Jaminan Pengiriman Layanan</li>
+                </ul>
+              </div>
+              <div></div>
+            </div>
+          </div>
+
+          <!-- Solusi Layanan -->
+          <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="service">
+            <h3 class="content-title mb-4 text-center">Solusi Layanan</h3>
+            <p class="mb-6 text-gray-700">
+              Kami menyediakan solusi layanan menyeluruh yang disesuaikan dengan kebutuhan operasional dan teknologi Anda. Dari pengadaan teknologi dan penyediaan solusi hingga implementasi sistem, layanan profesional, dan pemeliharaan jangka panjang, kami bertindak sebagai mitra tunggal yang andal untuk bisnis Anda. Di luar pengiriman proyek, kami memastikan kinerja sistem yang berkelanjutan melalui dukungan purna jual terstruktur, pemeliharaan proaktif, dan bantuan teknis berkelanjutan &mdash; memungkinkan organisasi Anda beroperasi dengan aman, efisien, dan tanpa gangguan.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div>
+                <h4 class="font-bold mb-2">Cakupan Layanan:</h4>
+                <ul class="space-y-1 text-gray-700">
+                  <li>Pengadaan Teknologi &amp; Penyediaan Solusi</li>
+                  <li>Desain &amp; Implementasi Sistem</li>
+                  <li>Layanan Profesional &amp; Teknis</li>
+                  <li>Dukungan Pasca Implementasi</li>
+                  <li>Pemeliharaan Preventif &amp; Korektif</li>
+                  <li>Layanan Terkelola &amp; Pemantauan Sistem</li>
+                  <li>Layanan Upgrade, Ekspansi &amp; Peningkatan</li>
+                  <li>Dukungan Teknis Berbasis SLA</li>
+                </ul>
+              </div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+          <!-- Aplikasi Non-ERP -->
+          <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="non-erp">
+            <h3 class="content-title mb-4 text-center">Aplikasi Non-ERP</h3>
+            <p class="mb-6 text-gray-700">
+              Solusi Aplikasi Non-ERP kami dirancang untuk meningkatkan efisiensi operasional melalui aplikasi bisnis yang dikustomisasi dan terspesialisasi di luar sistem ERP inti. Kami mengembangkan dan mengimplementasikan solusi yang terukur dan disesuaikan dengan kebutuhan organisasi tertentu, memastikan integrasi yang mulus dengan infrastruktur yang ada.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div>
+                <h4 class="font-bold mb-2">Cakupan Layanan:</h4>
+                <ul class="space-y-1 text-gray-700">
+                  <li>Desain &amp; Pengembangan Sistem</li>
+                  <li>Otomasi Alur Kerja</li>
+                  <li>Integrasi Sistem</li>
+                  <li>Konfigurasi Akses Pengguna &amp; Keamanan</li>
+                  <li>Migrasi Data</li>
+                  <li>Pelatihan &amp; Dukungan Pasca Implementasi</li>
+                </ul>
+              </div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+          <!-- Sistem Keamanan Elektronik -->
+          <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="electronic-security">
+            <h3 class="content-title mb-4 text-center">Sistem Keamanan Elektronik</h3>
+            <p class="mb-6 text-gray-700">
+              WCS mendefinisikan ulang keamanan fisik dengan menjembatani kesenjangan antara perangkat keras yang kokoh dan perangkat lunak yang cerdas. Didukung oleh prinsipal industri, kami menghadirkan ekosistem keamanan yang adaptif, andal, dan tangguh sepanjang siklus hidupnya, dirancang untuk memenuhi tuntutan ketat saat ini sekaligus tetap sepenuhnya adaptif terhadap teknologi masa depan dan lanskap berbasis AI.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div>
+                <h4 class="font-bold mb-2">Pendekatan Kami</h4>
+                <p class="text-gray-700">Fokus pada desain solusi siklus hidup, integrasi mulus, efisiensi operasional, dan mitigasi ancaman proaktif.</p>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Kapabilitas &amp; Layanan Inti Kami</h4>
+                <ul class="space-y-1 text-gray-700">
+                  <li>Pusat Komando Keamanan Fisik Terintegrasi (PSCC)</li>
+                  <li>Komunikasi Radio Kritis</li>
+                  <li>Pemantauan, Pengawasan, dan Analitik</li>
+                  <li>Sistem Kontrol Akses Fisik (PACS)</li>
+                  <li>Sistem Deteksi Intrusi Perimeter (PIDS)</li>
+                  <li>Layanan Sistem Keamanan Komprehensif atau Dukungan Pemeliharaan</li>
+                </ul>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kisah Sukses Unggulan -->
+  <section id="featured-stories" class="py-16 xl:h-fill">
+    <div class="container mx-auto flex flex-col mb-10">
+      <div class="section-title md:max-w-3/4">
+        <h2 class="page-title">Kisah Sukses Unggulan</h2>
+        <p>Selama lebih dari 20 tahun, WCS telah menyelesaikan 200+ proyek sukses di berbagai sektor.<br>Berikut beberapa sorotan bagaimana kami membantu perusahaan terkemuka menyelesaikan tantangan terberat mereka.</p>
+      </div>
+    </div>
+
+    <div class="relative container md:max-w-[100vw] ml-0 md:ml-4 lg:ml-8 xl:ml-0 md:pr-0 md:pl-[calc((100%-theme(maxWidth.7xl))/2+1rem)] lg:pl-[calc((100%-theme(maxWidth.7xl))/2+2rem)]">
+      <div class="swiper clientSwiper w-full">
+        <div class="swiper-wrapper items-center">
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/amazon.svg" alt="Amazon" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/telkomsel.png" alt="Telkomsel" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/pertamina.png" alt="Pertamina" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/mandiri-sekuritas.png" alt="Mandiri Sekuritas" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/peruri.png" alt="Peruri" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/telkom-akses.png" alt="Telkomakses" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/bangkok-bank.png" alt="Bangkok Bank" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/maybank-finance.png" alt="Maybank Finance" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/allobank.png" alt="Allo Bank" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/msig.png" alt="MSIG" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/universitas-pembangunan.png" alt="Universitas Pembangunan Nasional" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/graha-alam-lestari.png" alt="PT Graha Alam Lestari" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/multi-dimensi-teknologi.png" alt="Multi Dimensional Teknologi" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/pusri.png" alt="Pusri" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/madhani-talatah-nusantara.png" alt="PT Madhani Talatah Nusantara" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/raffles.svg" alt="Raffles" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/crowne-plaza.png" alt="Crowne Plaza Hotels &amp; Resorts" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/kemenkeu.png" alt="Kementerian Keuangan" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/bp.png" alt="British Petroleum" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/novotel.svg" alt="Novotel Hotels &amp; Resorts" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/universitas-indonesia.png" alt="Universitas Indonesia" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/hitachi-astemo.svg" alt="Hitachi Astemo" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/kalbe.svg" alt="Kalbe" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/angkasa-pura-2.png" alt="Angkasa Pura II" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/pln.png" alt="PLN" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/telkom-indonesia.svg" alt="Telkom Indonesia" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/jamkrindo.png" alt="Jamkrindo" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/bank-raya.png" alt="Bank Raya" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/astra-digital.png" alt="Astra Digital" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/kideco.svg" alt="Kideco" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/idx.png" alt="IDX" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/jasa-raharja.png" alt="Jasa Raharja" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/jaya-kencana.png" alt="PT Jaya Kencana" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/fif-group.png" alt="FIF Group" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/bca-life.png" alt="BCA Life" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/mandiri.svg" alt="Mandiri" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/pelindo.png" alt="Pelindo" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/japan-tobacco-indonesia.png" alt="Japan Tobacco Indonesia" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/showa.jpg" alt="Showa Indonesia - Hitachi Manufacturing Indonesia" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/sinar-putra-peremaja.png" alt="Sinar Putra Peremaja (Intiland Group)" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/johnson-control-indonesia.svg" alt="Johnson Control Indonesia" class="max-w-full max-h-full object-contain"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aliansi Strategis -->
+  <section id="strategicAlliances" class="py-8">
+    <div class="container mx-auto flex flex-col gap-6">
+      <div class="section-title md:w-[70%]">
+        <h2 class="page-title">Aliansi Strategis</h2>
+        <p>Sebagai Penyedia Solusi TI End-to-End di Indonesia, kami bermitra dengan vendor TI global terkemuka untuk menghadirkan solusi teknologi inovatif dan berkelas tinggi sejak hari pertama.</p>
+      </div>
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 gap-4 items-center">
+        <img src="../images/alliance/Aruba_Networks.svg" alt="Aruba Networks" class="w-full">
+        <img src="../images/alliance/AVAYA.svg" alt="Avaya" class="w-full">
+        <img src="../images/alliance/CyberArk.svg" alt="CyberArk" class="w-full">
+        <img src="../images/alliance/DELL_EMC.svg" alt="Dell EMC" class="w-full">
+        <img src="../images/alliance/FireEye.svg" alt="FireEye" class="w-full">
+        <img src="../images/alliance/Hewlett_Packard_Enterprise.svg" alt="Hewlett Packard Enterprise" class="w-full">
+        <img src="../images/alliance/huawei.svg" alt="Huawei" class="w-full">
+        <img src="../images/alliance/IBM.svg" alt="IBM" class="w-full">
+        <img src="../images/alliance/Infor.svg" alt="Infor" class="w-full">
+        <img src="../images/alliance/Ivanti.svg" alt="Ivanti" class="w-full">
+        <img src="../images/alliance/juniper.svg" alt="Juniper Networks" class="w-full">
+        <img src="../images/alliance/Trend_Micro.svg" alt="Trend Micro" class="w-full">
+        <img src="../images/alliance/zimbra.svg" alt="Zimbra" class="w-full">
+        <img src="../images/alliance/sangoma.png" alt="Sangoma" class="w-full">
+        <img src="../images/alliance/commscope.png" alt="CommScope" class="w-full">
+        <img src="../images/alliance/axis.png" alt="Axis Communications" class="w-full">
+        <img src="../images/alliance/sangfor.png" alt="Sangfor" class="w-full">
+        <img src="../images/alliance/h3c.png" alt="H3C" class="w-full">
+        <img src="../images/alliance/supermicro.png" alt="Super Micro" class="w-full">
+        <img src="../images/alliance/fortinet.png" alt="Fortinet" class="w-full">
+        <img src="../images/alliance/palo-alto.png" alt="Palo Alto Networks" class="w-full">
+        <img src="../images/alliance/eg.png" alt="EG" class="w-full">
+        <img src="../images/alliance/forescout.png" alt="Forescout" class="w-full">
+        <img src="../images/alliance/hid.png" alt="HID" class="w-full">
+        <img src="../images/alliance/bosch.png" alt="Bosch" class="w-full">
+        <img src="../images/alliance/zkteko.png" alt="ZKTeco" class="w-full">
+        <img src="../images/alliance/lenel-s2.png" alt="LENEL S2" class="w-full">
+        <img src="../images/alliance/belden.png" alt="Belden" class="w-full">
+        <img src="../images/alliance/unitree.png" alt="Unitree" class="w-full">
+        <img src="../images/alliance/acer.png" alt="Acer" class="w-full">
+        <img src="../images/alliance/Untitled.png" alt="Came" class="w-full">
+        <img src="../images/alliance/dahua.png" alt="Dahua Technology" class="w-full">
+        <img src="../images/alliance/hp.png" alt="HP" class="w-full">
+        <img src="../images/alliance/elastic.png" alt="Elastic" class="w-full">
+        <img src="../images/alliance/nutanix.png" alt="Nutanix" class="w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Mengapa Kami -->
+  <section id="whyUs" class="pt-16 pb-4">
+    <div class="container mx-auto flex flex-col gap-10">
+      <div class="section-title text-center">
+        <h2 class="page-title">Mengapa Kami</h2>
+        <p>Dengan pengalaman lebih dari 20 tahun, PT Wahana Ciptasinatria lebih dari sekadar penyedia teknologi</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-1">
+        <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg lg:rounded-r-none lg:rounded-l-lg">
+          <img src="../images/icons/ic_calendar.svg" alt="berpengalaman" class="w-8 lg:w-12">
+          <div>
+            <h3>20+ Tahun Berpengalaman</h3>
+            <p>Selama lebih dari 20 tahun, kami telah membangun reputasi untuk inovasi dan solusi yang berfokus pada pelanggan</p>
+          </div>
+        </div>
+        <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg lg:rounded-none">
+          <img src="../images/icons/ic_people.svg" alt="layanan" class="w-8 lg:w-12">
+          <div>
+            <h3>220+ Total Tenaga Ahli</h3>
+            <p>Sekitar 220 spesialis teknologi dan konsultan</p>
+          </div>
+        </div>
+        <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg lg:rounded-l-none lg:rounded-r-lg">
+          <img src="../images/icons/ic_project.svg" alt="proyek" class="w-8 md:w-12">
+          <div>
+            <h3>200+ Proyek</h3>
+            <p>Lebih dari 200 proyek sukses di Indonesia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Tab functionality
+    const tabs = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('bg-primary', 'text-white', 'hover:text-white'));
+        tabs.forEach(t => t.classList.add('text-gray-600', 'bg-[#F5F5F5]', 'hover:text-primary'));
+        panels.forEach(p => p.classList.add('hidden'));
+
+        tab.classList.add('bg-primary', 'text-white', 'hover:text-white');
+        tab.classList.remove('text-gray-600', 'hover:text-primary');
+
+        const target = tab.dataset.tab;
+        document.getElementById(target).classList.remove('hidden');
+      });
+    });
+
+    // Activate tab from URL query param (e.g. ?tab=application)
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabParam = urlParams.get('tab');
+    if (tabParam) {
+      const targetTab = document.querySelector(`.tab-btn[data-tab="${tabParam}"]`);
+      if (targetTab) {
+        tabs.forEach(t => t.classList.remove('bg-primary', 'text-white', 'hover:text-white'));
+        tabs.forEach(t => t.classList.add('text-gray-600', 'bg-[#F5F5F5]', 'hover:text-primary'));
+        panels.forEach(p => p.classList.add('hidden'));
+        targetTab.classList.add('bg-primary', 'text-white', 'hover:text-white');
+        targetTab.classList.remove('text-gray-600', 'hover:text-primary');
+        document.getElementById(tabParam).classList.remove('hidden');
+      }
+    }
+
+    // Mobile menu toggle
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', function() {
+        menu.classList.toggle('hidden');
+        document.body.classList.toggle('overflow-hidden');
+      });
+    }
+
+    // Swiper - client logo carousel
+    document.addEventListener('DOMContentLoaded', function() {
+      const clientSwiperEl = document.querySelector('.clientSwiper');
+      if (clientSwiperEl && typeof Swiper !== 'undefined') {
+        const clientSwiper = new Swiper('.clientSwiper', {
+          slidesPerView: 'auto',
+          spaceBetween: 16,
+          loop: true,
+          loopedSlides: 8,
+          autoplay: { delay: 1500, disableOnInteraction: false },
+          speed: 800,
+        });
+        clientSwiperEl.addEventListener('mouseenter', () => clientSwiper.autoplay.stop());
+        clientSwiperEl.addEventListener('mouseleave', () => clientSwiper.autoplay.start());
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+  <script src="../js/footer-id.js"></script>
+</body>
+</html>
