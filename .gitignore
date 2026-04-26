@@ -9,6 +9,4 @@ Thumbs.db
 *.swo
 *~
 
-# Kiro
-.kiro/
-.kiro/steering/project-context.md
+.kiro
