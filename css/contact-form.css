@@ -1,0 +1,328 @@
+/**
+ * @file
+ * Styles for the Contact Us form.
+ */
+
+/* Hero Banner */
+.contact-hero-banner {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%),
+              url('../images/banners/bg_banner_left.png') left center no-repeat,
+              url('../images/banners/bg_banner_right.png') right center no-repeat;
+  background-size: auto, contain, contain;
+  background-color: #667eea;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.contact-hero-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Contact Us Page Layout */
+.contact-us-wrapper {
+  width: 100%;
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.contact-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* Left: Contact Form Section */
+.contact-form-section {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-wrapper {
+  width: 100%;
+}
+
+/* Right: Contact Information Panel */
+.contact-info-section {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.contact-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: #f0f2ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #667eea;
+}
+
+.contact-info-details {
+  flex: 1;
+}
+
+.contact-info-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+.contact-info-link {
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  transition: color 0.2s;
+}
+
+.contact-info-link:hover {
+  color: #667eea;
+  text-decoration: underline;
+}
+
+/* Form Styles */
+.contact-us-form {
+  width: 100%;
+}
+
+.contact-us-form .form-item {
+  margin-bottom: 1.5rem;
+}
+
+.contact-us-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333333;
+  font-size: 0.95rem;
+}
+
+.contact-us-form .form-required {
+  color: #dc3545;
+  margin-left: 0.25rem;
+}
+
+.contact-us-form input[type="text"],
+.contact-us-form input[type="email"],
+.contact-us-form input[type="tel"],
+.contact-us-form select,
+.contact-us-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.contact-us-form input[type="text"]:focus,
+.contact-us-form input[type="email"]:focus,
+.contact-us-form input[type="tel"]:focus,
+.contact-us-form select:focus,
+.contact-us-form textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.contact-us-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-us-form .description {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+/* Radio buttons and checkboxes */
+.contact-us-form .form-type-radio,
+.contact-us-form .form-type-checkbox {
+  margin-bottom: 0.75rem;
+}
+
+.contact-us-form .form-type-radio label,
+.contact-us-form .form-type-checkbox label {
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-us-form input[type="radio"],
+.contact-us-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+/* Privacy checkbox special styling */
+.contact-us-form .form-item-privacy-accepted {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.contact-us-form .form-item-privacy-accepted label {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Submit button */
+.contact-form-submit {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  border: none;
+  padding: 0.875rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 1rem;
+}
+
+.contact-form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.contact-form-submit:active {
+  transform: translateY(0);
+}
+
+.contact-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Error messages */
+.contact-us-form .form-item--error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.contact-us-form .form-item--error input,
+.contact-us-form .form-item--error select,
+.contact-us-form .form-item--error textarea {
+  border-color: #dc3545;
+}
+
+/* Success/Error messages */
+.messages {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.messages--status {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.messages--error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.messages--warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contact-hero-title {
+    font-size: 2rem;
+  }
+  
+  .contact-hero-description {
+    font-size: 1rem;
+  }
+  
+  .contact-us-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-info-section {
+    order: 2;
+  }
+  
+  .contact-form-section {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero-banner {
+    padding: 3rem 1rem;
+  }
+  
+  .contact-hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .contact-us-wrapper {
+    padding: 2rem 0.5rem;
+  }
+  
+  .contact-form-section,
+  .contact-info-section {
+    padding: 1.5rem;
+  }
+  
+  .contact-form-submit {
+    width: 100%;
+  }
+}

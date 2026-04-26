@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Under Maintenance</title>
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      /* base background color (no linear-gradient) */
+      background-color: rgb(20, 27, 32);
+      background-image: url('https://wcs.co.id/assets/images/tech/background.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      position: relative;
+      color: #fff;
+    }
+
+    /* full-screen gray mask (separate pseudo-element) */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 27, 32,0.75); /* strong gray mask */
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .container {
+      text-align: center;
+      /* more transparent so the masked background shows through more */
+      background: rgba(255,255,255,0.55);
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      max-width: 400px;
+      z-index: 3; /* keep above mask and decorative gears */
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2d2b76; /* biru */
+      margin-bottom: 20px;
+    }
+
+    .logo-img {
+      max-width: 100%;
+      height: 100px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* decorative gears as DOM elements behind the container but above the mask */
+    .gear {
+      position: absolute;
+      font-size: 80px;
+      color: rgba(0,0,0,0.06);
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .gear.left {
+      bottom: 20%;
+      left: 8%;
+      transform: rotate(-15deg);
+    }
+
+    .gear.right {
+      top: 15%;
+      right: 10%;
+      font-size: 100px;
+      transform: rotate(20deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo"><img class="logo-img" src="wcs-logo.png" alt="WCS Logo" /><br>Wahana Ciptasinatria</div>
+    <div class="title">Our site is under<br>maintenance</div>
+    <div class="desc">
+      Our website is currently undergoing scheduled maintenance.<br>
+      We should be back shortly. Thank you for your patience.
+    </div>
+  </div>
+</body>
+</html>
