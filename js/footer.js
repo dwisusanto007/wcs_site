@@ -38,7 +38,7 @@ document.getElementById('footer-placeholder').innerHTML = `
             <li><a href="index.html?tab=infrastructure#solutionServices" class="footer-link">Network and Infrastructure Solutions</a></li>
             <li><a href="index.html?tab=application#solutionServices" class="footer-link">Security Solutions</a></li>
             <li><a href="index.html?tab=service#solutionServices" class="footer-link">Services Solutions</a></li>
-            <li><a href="index.html?tab=non-erp#solutionServices" class="footer-link">Application Non-ERP</a></li>
+            <li><a href="index.html?tab=non-erp#solutionServices" class="footer-link">Advanced Application Solutions</a></li>
             <li><a href="index.html?tab=electronic-security#solutionServices" class="footer-link">Electronic Security System</a></li>
           </ul>
           <div class="footer-col-address">

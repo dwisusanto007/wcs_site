@@ -23,7 +23,7 @@ document.getElementById('header-placeholder').innerHTML = `
             <a href="index.html?tab=infrastructure#solutionServices" class="block px-8 py-2 hover:text-primary">Network and Infrastructure Solutions</a>
             <a href="index.html?tab=application#solutionServices" class="block px-8 py-2 hover:text-primary">Security Solutions</a>
             <a href="index.html?tab=service#solutionServices" class="block px-8 py-2 hover:text-primary">Services Solutions</a>
-            <a href="index.html?tab=non-erp#solutionServices" class="block px-8 py-2 hover:text-primary">Application Non-ERP</a>
+            <a href="index.html?tab=non-erp#solutionServices" class="block px-8 py-2 hover:text-primary">Advanced Application Solutions</a>
             <a href="index.html?tab=electronic-security#solutionServices" class="block px-8 py-2 hover:text-primary">Electronic Security System</a>
           </div>
         </div>
@@ -74,7 +74,7 @@ document.getElementById('header-placeholder').innerHTML = `
               <a href="index.html?tab=infrastructure#solutionServices" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Network and Infrastructure Solutions</a>
               <a href="index.html?tab=application#solutionServices" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Security Solutions</a>
               <a href="index.html?tab=service#solutionServices" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Services Solutions</a>
-              <a href="index.html?tab=non-erp#solutionServices" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Application Non-ERP</a>
+              <a href="index.html?tab=non-erp#solutionServices" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Advanced Application Solutions</a>
               <a href="index.html?tab=electronic-security#solutionServices" class="flex items-center gap-2 px-4 py-2 hover:bg-gray-100 hover:text-red-600">Electronic Security System</a>
             </div>
           </details>

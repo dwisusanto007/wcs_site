@@ -38,7 +38,7 @@ document.getElementById('footer-placeholder').innerHTML = `
             <li><a href="../id/index.html?tab=infrastructure#solutionServices" class="footer-link">Solusi Jaringan dan Infrastruktur</a></li>
             <li><a href="../id/index.html?tab=application#solutionServices" class="footer-link">Solusi Keamanan</a></li>
             <li><a href="../id/index.html?tab=service#solutionServices" class="footer-link">Solusi Layanan</a></li>
-            <li><a href="../id/index.html?tab=non-erp#solutionServices" class="footer-link">Aplikasi Non-ERP</a></li>
+            <li><a href="../id/index.html?tab=non-erp#solutionServices" class="footer-link">Advanced Application Solutions</a></li>
             <li><a href="../id/index.html?tab=electronic-security#solutionServices" class="footer-link">Sistem Keamanan Elektronik</a></li>
           </ul>
           <div class="footer-col-address">
