@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beranda | PT WAHANA CIPTASINATRIA</title>
+  <title>Home — Dark | PT WAHANA CIPTASINATRIA</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme-dark.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="icon" id="dynamic-favicon" type="image/svg+xml">
   <script>
@@ -16,235 +17,132 @@
     })();
   </script>
 </head>
-<body class="font-inter">
+<body class="font-inter theme-dark">
+
+  <!-- Theme Switcher Bar -->
+  <div style="background:#161618;color:#A8A29E;text-align:center;padding:8px 16px;font-size:13px;font-family:Inter,sans-serif;border-bottom:1px solid #2E2E33;">
+    Viewing: <strong style="color:#C9A96E;">Dark</strong> &nbsp;|&nbsp;
+    <a href="../light-grey/index.html" style="color:#78716C;text-decoration:underline;">Light Grey</a> &nbsp;·&nbsp;
+    <a href="../beige/index.html" style="color:#78716C;text-decoration:underline;">Beige</a>
+  </div>
+
   <div id="header-placeholder"></div>
-  <script src="../js/header-id.js"></script>
+  <script src="../js/header-dark.js"></script>
 
   <!-- Hero -->
   <section id="homeBanner" class="relative py-8">
     <div class="-z-10">
-      <img src="../images/banners/bg_banner_left.png" alt="hero banner kiri" class="h-[250px] md:h-[400px] absolute left-0 top-0 invisible" onload="this.classList.remove('invisible')">
-      <img src="../images/banners/bg_banner_right.png" alt="hero banner kanan" class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0 invisible" onload="this.classList.remove('invisible')">
+      <img src="../images/banners/bg_banner_left.png" alt="hero banner left" class="h-[250px] md:h-[400px] absolute left-0 top-0 invisible" onload="this.classList.remove('invisible')">
+      <img src="../images/banners/bg_banner_right.png" alt="hero banner right" class="h-[300px] md:h-[450px] absolute right-0 top-28 md:bottom-0 invisible" onload="this.classList.remove('invisible')">
     </div>
     <div class="container relative h-full">
       <div class="flex flex-col md:flex-row items-center h-full md:gap-8">
         <div class="order-2 md:order-1 flex-1 flex flex-col items-start space-y-4 md:space-y-8">
           <div>
-            <h1 class="banner-title opacity-0 animate-slideInLeft delay-0">
-              Satu Sistem Integrator,<br>Semua Kebutuhan Konektivitas Anda
-            </h1>
-            <p class="opacity-0 animate-slideInRight delay-500">
-              Mulai dari integrasi hingga solusi keamanan dan komunikasi suara, kami menghadirkan konektivitas tanpa hambatan untuk mendukung pertumbuhan bisnis Anda.
-            </p>
+            <h1 class="banner-title opacity-0 animate-slideInLeft delay-0">One System Integrator,<br>All Your Connectivity Needs</h1>
+            <p class="opacity-0 animate-slideInRight delay-500">From integration to security and voice solutions, we deliver seamless connectivity to power your business growth.</p>
           </div>
         </div>
         <div class="order-1 md:order-2 mb-4 md:mb-0 md:w-[475px] md:h-[430px] flex items-center justify-center">
-          <img src="../images/banners/hero_banner.png" alt="Semua Kebutuhan Konektivitas Anda" class="h-full w-auto object-contain md:h-full invisible" onload="this.classList.remove('invisible')">
+          <img src="../images/banners/hero_banner.png" alt="All Your Connectivity Needs" class="h-full w-auto object-contain md:h-full invisible" onload="this.classList.remove('invisible')">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Solusi & Layanan -->
+  <!-- Solution & Services -->
   <section id="solutionServices" class="pt-12 pb-4">
     <div class="container mx-auto flex flex-col gap-10">
       <div class="section-title text-center">
-        <h2 class="page-title">Solusi &amp; Layanan</h2>
-        <p>Bangun fondasi TI yang andal dan skalabel dengan layanan infrastruktur yang dirancang sesuai kebutuhan Anda.</p>
+        <h2 class="page-title">Solutions &amp; Services</h2>
+        <p>Build a reliable and scalable IT foundation with our tailored infrastructure services.</p>
       </div>
-
       <div>
-        <!-- Tabs -->
         <div class="flex flex-col md:flex-row space-y-1 md:space-x-4">
-          <button class="tab-btn flex-1 text-white bg-primary hover:text-white px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium" data-tab="infrastructure">Solusi Jaringan dan Infrastruktur</button>
-          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="application">Solusi Keamanan</button>
-          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="service">Solusi Layanan</button>
+          <button class="tab-btn flex-1 text-white bg-primary hover:text-white px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium" data-tab="infrastructure">Network and Infrastructure Solutions</button>
+          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="application">Security Solutions</button>
+          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="service">Service Solution</button>
           <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="non-erp">Advanced Application Solutions</button>
-          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="electronic-security">Sistem Keamanan Elektronik</button>
+          <button class="tab-btn flex-1 text-gray-600 hover:text-primary px-4 py-3 rounded-xl md:rounded-t-xl md:rounded-b-none font-medium bg-[#F5F5F5]" data-tab="electronic-security">Electronic Security System</button>
         </div>
-
-        <!-- Tab content -->
         <div class="tab-content p-4 mt-2 md:mt-0 border border-gray-200 rounded-xl md:rounded-b-xl md:rounded-t-none overflow-auto">
-          <!-- Solusi Infrastruktur -->
+          <!-- Infrastructure Solution -->
           <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto" id="infrastructure">
             <div>
               <h3 class="content-title mb-4 text-center">Network and Infrastructure Solutions</h3>
-              <p class="mb-6 text-gray-700">
-                Kami menghadirkan solusi infrastruktur dan keamanan yang terintegrasi untuk memperkuat fondasi bisnis, meningkatkan ketahanan, melindungi aset, serta memastikan operasional perusahaan tetap berjalan optimal. Didukung oleh keahlian industri yang mendalam dan kemitraan teknologi global yang tepercaya, kami membantu perusahaan Anda tumbuh dan beradaptasi di era digital.
-              </p>
+              <p class="mb-6 text-gray-700">We engineer integrated infrastructure and security solutions that empower businesses to strengthen resilience, protect enterprise assets, and sustain operational excellence. Leveraging deep-rooted industry expertise and trusted global technology alliances, we help organizations thrive in a digitally driven world.</p>
               <div class="grid grid-cols-2 gap-4 lg:gap-8">
                 <div class="space-y-4">
-                  <div>
-                    <h4 class="font-bold mb-1">Infrastructure &amp; Connectivity</h4>
-                    <p class="text-gray-600">Infrastruktur yang andal dirancang untuk mendukung operasi perusahaan.</p>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1">Data Center, Server &amp; Storage Solutions</h4>
-                    <p class="text-gray-600">Solusi infrastruktur yang fleksibel dan siap berkembang untuk mendukung kebutuhan perusahaan dengan tingkat keamanan dan performa tinggi.</p>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1">Enterprise Networking &amp; Connectivity</h4>
-                    <p class="text-gray-600">Arsitektur jaringan yang kuat dan efisien, mencakup enterprise networking, optimasi WAN, hingga akselerasi jaringan untuk konektivitas tanpa hambatan.</p>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1">Unified Communication &amp; Contact Center</h4>
-                    <p class="text-gray-600">Sistem komunikasi omni-channel yang mengintegrasikan layanan suara dan contact center, termasuk integrasi WhatsApp terpusat untuk pengalaman komunikasi yang lebih terhubung.</p>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1">Collaboration &amp; Video Conferencing</h4>
-                    <p class="text-gray-600">Solusi video conference kelas enterprise yang menghadirkan komunikasi dan kolaborasi yang lancar, efektif, dan real-time.</p>
-                  </div>
+                  <div><h4 class="font-bold mb-1">Infrastructure &amp; Connectivity</h4><p class="text-gray-600">Reliable and scalable infrastructure designed to support essential enterprise operations.</p></div>
+                  <div><h4 class="font-bold mb-1">Data Center, Server &amp; Storage Solutions</h4><p class="text-gray-600">Scalable infrastructure to support secure and high-performance enterprise workloads.</p></div>
+                  <div><h4 class="font-bold mb-1">Enterprise Networking &amp; Connectivity</h4><p class="text-gray-600">Reliable network architecture encompassing enterprise networking, WAN optimization, and network acceleration.</p></div>
+                  <div><h4 class="font-bold mb-1">Unified Communication &amp; Contact Center</h4><p class="text-gray-600">Omni-channel communications systems combining voice and contact center with centralized WhatsApp integration.</p></div>
+                  <div><h4 class="font-bold mb-1">Collaboration &amp; Video Conferencing</h4><p class="text-gray-600">Enterprise-grade video conferencing solutions for seamless communication and collaboration.</p></div>
                 </div>
                 <div class="space-y-4">
-                  <div>
-                    <h4 class="font-bold mb-1">Physical Security</h4>
-                    <p class="text-gray-600">Kami menghadirkan solusi keamanan fisik terintegrasi untuk melindungi personel, aset, dan fasilitas bisnis Anda secara menyeluruh.</p>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1">Intelligent Video Surveillance</h4>
-                    <p class="text-gray-600">Sistem CCTV dan video surveillance cerdas untuk memberikan visibilitas penuh di seluruh area operasional penting.</p>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1">Access Control &amp; Identity Management</h4>
-                    <p class="text-gray-600">Sistem pengelolaan akses yang aman dan skalabel untuk mengatur dan memonitor akses di lingkungan modern.</p>
-                  </div>
-                  <div>
-                    <h4 class="font-bold mb-1">Perimeter Security</h4>
-                    <p class="text-gray-600">Solusi pemantauan perimeter yang komprehensif untuk menjaga keamanan area dan lokasi kritis.</p>
-                  </div>
+                  <div><h4 class="font-bold mb-1">Physical Security</h4><p class="text-gray-600">Design and integrate robust security systems to protect your personnel, assets, and facilities.</p></div>
+                  <div><h4 class="font-bold mb-1">Intelligent Video Surveillance</h4><p class="text-gray-600">CCTV and video surveillance systems to ensure visibility across major enterprise touchpoints.</p></div>
+                  <div><h4 class="font-bold mb-1">Access Control &amp; Identity Management Systems</h4><p class="text-gray-600">Secure and scalable control to manage access for modern facilities.</p></div>
+                  <div><h4 class="font-bold mb-1">Perimeter Security</h4><p class="text-gray-600">Comprehensive monitoring solutions for critical sites.</p></div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Solusi Keamanan -->
+          <!-- Security Solutions -->
           <div class="tab-panel min-h-64 overflow-auto hidden" id="application">
             <h3 class="content-title mb-4 text-center">Security Solutions</h3>
-            <p class="mb-6 text-gray-700">
-              Kami menghadirkan solusi keamanan enterprise terintegrasi yang dirancang untuk mendukung dan berperan penting dalam operasional bisnis. Dimulai dari jaringan yang andal dan keamanan siber tingkat lanjut hingga integrasi cloud dan layanan terkelola, kami menyiapkan fondasi agar perusahaan Anda dapat terus beroperasi secara aman.
-            </p>
+            <p class="mb-6 text-gray-700">We deliver integrated enterprise security solutions tailored to support modern and complex core business environments. From resilient networking and advanced cybersecurity to cloud integration and managed services, we prepare the foundation for your organizations continue to operate securely, allowing you to concentrate on growing your core business.</p>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div>
-                <h4 class="font-bold mb-2">Jaringan &amp; Keamanan Siber</h4>
-                <p class="mb-4 text-gray-600">Perlindungan menyeluruh pada jaringan, aplikasi, endpoint, dan lingkungan data Anda.</p>
-                <ul class="space-y-1 text-gray-700">
-                  <li>Next-Generation Firewall</li>
-                  <li>Web Application Firewall</li>
-                  <li>Advanced Threat Protection</li>
-                  <li>Advanced Endpoint Protection</li>
-                  <li>Network Access Control</li>
-                  <li>Database Security</li>
-                  <li>Privilege Access Management</li>
-                  <li>Vulnerability Management</li>
-                  <li>Next-Generation SIEM</li>
-                </ul>
+                <h4 class="font-bold mb-2">Network &amp; Cybersecurity</h4>
+                <p class="mb-4 text-gray-600">Comprehensive protection across your network, applications, endpoints, and data environments.</p>
+                <ul class="space-y-1 text-gray-700"><li>Next-Generation Firewall</li><li>Web Application Firewall</li><li>Advanced Threat Protection</li><li>Advanced Endpoint Protection</li><li>Network Access Control</li><li>Database Security</li><li>Privilege Access Management</li><li>Vulnerability Management</li><li>Next-Generation SIEM</li></ul>
               </div>
               <div>
                 <h4 class="font-bold mb-2">Cloud, Managed &amp; Assurance Services</h4>
-                <p class="mb-4 text-gray-600">Dukungan berkelanjutan serta layanan strategis untuk memastikan kinerja optimal, kepatuhan, dan ketahanan jangka panjang.</p>
-                <ul class="space-y-1 text-gray-700">
-                  <li>Solusi Cloud</li>
-                  <li>Managed Services</li>
-                  <li>Integrasi DevSecOps</li>
-                  <li>Monitoring Keamanan &amp; Mitigasi Risiko</li>
-                  <li>Platform Assurance Layanan</li>
-                </ul>
+                <p class="mb-4 text-gray-600">Continuous support and strategic services to ensure performance, compliance, and long-term resilience.</p>
+                <ul class="space-y-1 text-gray-700"><li>Cloud Solutions</li><li>Managed Services</li><li>DevSecOps Integration</li><li>Security Monitoring &amp; Risk Mitigation</li><li>Service Delivery Assurance Platform</li></ul>
               </div>
               <div></div>
             </div>
           </div>
-
-          <!-- Solusi Layanan -->
+          <!-- Service Solution -->
           <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="service">
             <h3 class="content-title mb-4 text-center">Service Solutions</h3>
-            <p class="mb-6 text-gray-700">
-              Kami menghadirkan layanan menyeluruh yang fleksibel dan dirancang mengikuti kebutuhan operasional
-              serta teknologi Anda. Mulai dari pengadaan dan penyediaan solusi hingga implementasi sistem dan
-              layanan profesional, kami memastikan setiap proses berjalan efektif dan terintegrasi.
-            </p>
-            <p class="mb-6 text-gray-700">
-              Lebih dari sekadar penyelesaian proyek, kami memastikan sistem Anda tetap berjalan optimal melalui
-              dukungan after-sales yang terstruktur, pemeliharaan proaktif, serta pendampingan teknis secara
-              berkelanjutan.
-            </p>
-            <p class="mb-6 text-gray-700">
-              Dengan pendekatan menyeluruh dari tahap perencanaan hingga pemeliharaan jangka panjang, kami
-              hadir sebagai mitra tepercaya yang mendukung kelangsungan operasional perusahaan Anda agar tetap
-              aman, efisien, dan tanpa hambatan.
-            </p>
+            <p class="mb-6 text-gray-700">We provide comprehensive, on-demand service solutions tailored to your operational and technological needs. Whether managing technology sourcing and solution supply, or system implementation and professional services, we function as a seamless extension of your team.</p>
+            <p class="mb-6 text-gray-700">From initial design to long-term maintenance, we aim to be a reliable partner for the end-to-end lifecycle of your business, enabling your organization to operate securely and efficiently without disruption.</p>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div>
-                <h4 class="font-bold mb-2">Ruang Lingkup Layanan:</h4>
-                <ul class="space-y-1 text-gray-700">
-                  <li>Pengadaan Teknologi &amp; Penyediaan Solusi</li>
-                  <li>Perancangan &amp; Implementasi Sistem</li>
-                  <li>Layanan Profesional &amp; Teknis</li>
-                  <li>Dukungan Pasca Implementasi</li>
-                  <li>Pemeliharaan Preventif &amp; Korektif</li>
-                  <li>Managed Services &amp; Monitoring Sistem</li>
-                  <li>Upgrade, Ekspansi &amp; Peningkatan Sistem</li>
-                  <li>Dukungan Teknis Berbasis SLA</li>
-                </ul>
+                <h4 class="font-bold mb-2">Scope of Services:</h4>
+                <ul class="space-y-1 text-gray-700"><li>Technology Sourcing &amp; Solution Supply</li><li>System Design &amp; Implementation</li><li>Professional &amp; Technical Services</li><li>Post-Deployment Support</li><li>Preventive &amp; Corrective Maintenance</li><li>Managed Services &amp; System Monitoring</li><li>Upgrade, Expansion &amp; Enhancement Services</li><li>SLA-Based Technical Support</li></ul>
               </div>
-              <div></div>
-              <div></div>
+              <div></div><div></div>
             </div>
           </div>
-
           <!-- Advanced Application Solutions -->
           <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="non-erp">
             <h3 class="content-title mb-4 text-center">Advanced Application Solutions</h3>
-            <p class="mb-6 text-gray-700">
-              Tiap organisasi memiliki kebutuhan yang unik. Karena itu, kami menghadirkan aplikasi bisnis
-              yang dikembangkan secara khusus untuk melengkapi sistem yang telah ada, sehingga
-              mendorong efisiensi operasional yang lebih optimal.
-            </p>
-            <p class="mb-6 text-gray-700">
-              Solusi kami dirancang fleksibel dan mudah dikembangkan, terintegrasi secara mulus, serta
-              mampu mendukung keseluruhan ekosistem teknologi Anda.
-            </p>
+            <p class="mb-6 text-gray-700">Recognizing that every organization has unique requirements, we design specialized business applications that augment your existing infrastructure. We focus on developing flexible and growth-ready, customized solutions that drive deeper operational efficiency while ensuring seamless integration across your entire technology stack.</p>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div>
-                <h4 class="font-bold mb-2">Ruang Lingkup Layanan:</h4>
-                <ul class="space-y-1 text-gray-700">
-                  <li>Perancangan &amp; Pengembangan Sistem</li>
-                  <li>Otomatisasi Workflow</li>
-                  <li>Integrasi Sistem</li>
-                  <li>Konfigurasi Akses &amp; Keamanan Pengguna</li>
-                  <li>Migrasi Data</li>
-                  <li>Pelatihan &amp; Dukungan Pasca Implementasi</li>
-                </ul>
+                <h4 class="font-bold mb-2">Scope of Services:</h4>
+                <ul class="space-y-1 text-gray-700"><li>System Design &amp; Development</li><li>Workflow Automation</li><li>System Integration</li><li>User Access &amp; Security Configuration</li><li>Data Migration</li><li>Training &amp; Post-Implementation Support</li></ul>
               </div>
-              <div></div>
-              <div></div>
+              <div></div><div></div>
             </div>
           </div>
-
-          <!-- Sistem Keamanan Elektronik -->
+          <!-- Electronic Security System -->
           <div class="tab-panel min-h-64 md:h-[520px] lg:h-[400px] overflow-auto hidden" id="electronic-security">
             <h3 class="content-title mb-4 text-center">Electronic Security System</h3>
-            <p class="mb-6 text-gray-700">
-              WCS menghadirkan pendekatan baru dalam keamanan fisik melalui perpaduan perangkat
-              keras yang andal dan perangkat lunak yang cerdas. Didukung oleh mitra teknologi terpercaya,
-              kami membangun ekosistem keamanan yang adaptif, andal, dan tangguh, dirancang untuk
-              menjawab kebutuhan saat ini sekaligus siap beradaptasi dengan perkembangan teknologi di
-              masa depan.
-            </p>
+            <p class="mb-6 text-gray-700">WCS redefines physical security by leveraging a combination of robust hardware and intelligent software. Backed by trusted industry principals, we deliver an adaptive, reliable, and resilient security ecosystem service designed to meet today&rsquo;s rigorous demands while remaining fully adaptable to the technology and AI-driven landscape of tomorrow.</p>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div>
-                <h4 class="font-bold mb-2">Pendekatan kami:</h4>
-                <p class="text-gray-700">Menyeluruh dari awal hingga akhir, mencakup perancangan solusi, integrasi yang mulus, peningkatan efisiensi operasional, serta mitigasi ancaman secara proaktif.</p>
+                <h4 class="font-bold mb-2">Our Approach:</h4>
+                <p class="text-gray-700">An end-to-end lifecycle: solution design, seamless integration, operational efficiency, and proactive threat mitigation.</p>
               </div>
               <div>
-                <h4 class="font-bold mb-2">Kapabilitas &amp; Layanan Inti Kami</h4>
-                <ul class="space-y-1 text-gray-700">
-                  <li>Pusat Komando Keamanan Fisik Terintegrasi (PSCC)</li>
-                  <li>Komunikasi Radio Kritis</li>
-                  <li>Pemantauan, Pengawasan, dan Analitik</li>
-                  <li>Sistem Kontrol Akses Fisik (PACS)</li>
-                  <li>Sistem Deteksi Intrusi Perimeter (PIDS)</li>
-                  <li>Layanan Sistem Keamanan Komprehensif atau Dukungan Pemeliharaan</li>
-                </ul>
+                <h4 class="font-bold mb-2">Our Core Capabilities &amp; Services</h4>
+                <ul class="space-y-1 text-gray-700"><li>Integrated Physical Security Command Centers (PSCC)</li><li>Mission-Critical Radio Communications</li><li>Monitoring, Surveillance, and Analytics</li><li>Physical Access Control Systems (PACS)</li><li>Perimeter Intrusion Detection Systems (PIDS)</li><li>Comprehensive Security System Services or Maintenance Support</li></ul>
               </div>
               <div></div>
             </div>
@@ -254,15 +152,14 @@
     </div>
   </section>
 
-  <!-- Kisah Sukses Unggulan -->
+  <!-- Featured Success Stories -->
   <section id="featured-stories" class="py-16 xl:h-fill">
     <div class="container mx-auto flex flex-col mb-10">
       <div class="section-title md:max-w-3/4">
-        <h2 class="page-title">Klien Kami</h2>
-        <p>Selama lebih dari 30 tahun, WCS telah menyelesaikan 300+ proyek di berbagai sektor industri dengan hasil yang teruji.Berikut beberapa contoh bagaimana kami membantu perusahaan terkemuka menghadapi dan mengatasi tantangan bisnis yang kompleks.</p>
+        <h2 class="page-title">Featured Success Stories</h2>
+        <p>Over 30+ years, WCS has delivered 300+ successful projects across diverse sectors.<br>Here are some highlights of how we help leading enterprises solve their toughest challenges.</p>
       </div>
     </div>
-
     <div class="relative container md:max-w-[100vw] ml-0 md:ml-4 lg:ml-8 xl:ml-0 md:pr-0 md:pl-[calc((100%-theme(maxWidth.7xl))/2+1rem)] lg:pl-[calc((100%-theme(maxWidth.7xl))/2+2rem)]">
       <div class="swiper clientSwiper w-full">
         <div class="swiper-wrapper items-center">
@@ -304,20 +201,20 @@
           <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/mandiri.svg" alt="Mandiri" class="max-w-full max-h-full object-contain"></a>
           <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/pelindo.png" alt="Pelindo" class="max-w-full max-h-full object-contain"></a>
           <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/japan-tobacco-indonesia.png" alt="Japan Tobacco Indonesia" class="max-w-full max-h-full object-contain"></a>
-          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/showa.jpg" alt="Showa Indonesia - Hitachi Manufacturing Indonesia" class="max-w-full max-h-full object-contain"></a>
-          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/sinar-putra-peremaja.png" alt="Sinar Putra Peremaja (Intiland Group)" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/showa.jpg" alt="Showa Indonesia" class="max-w-full max-h-full object-contain"></a>
+          <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/sinar-putra-peremaja.png" alt="Sinar Putra Peremaja" class="max-w-full max-h-full object-contain"></a>
           <a href="#" class="swiper-slide flex items-center justify-center p-4 rounded-lg bg-white hover:cursor-pointer" style="width:140px;height:140px;flex-shrink:0"><img src="../images/clients/johnson-control-indonesia.svg" alt="Johnson Control Indonesia" class="max-w-full max-h-full object-contain"></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Aliansi Strategis -->
+  <!-- Strategic Alliances -->
   <section id="strategicAlliances" class="py-8">
     <div class="container mx-auto flex flex-col gap-6">
       <div class="section-title md:w-[70%]">
-        <h2 class="page-title">Aliansi Strategis</h2>
-        <p>Sebagai penyedia solusi TI end-to-end di Indonesia, kami bermitra dengan vendor TI global terkemuka untuk menghadirkan solusi teknologi inovatif dan berkualitas tinggi sejak hari pertama.</p>
+        <h2 class="page-title">Strategic Alliance</h2>
+        <p>As an End-to-End IT Solution Provider in Indonesia, we partner with leading global IT vendors to deliver innovative, high-end technology solutions from day one.</p>
       </div>
       <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10 gap-4 items-center">
         <img src="../images/alliance/Aruba_Networks.svg" alt="Aruba Networks" class="w-full">
@@ -362,34 +259,25 @@
     </div>
   </section>
 
-  <!-- Mengapa Kami -->
+  <!-- Why Us -->
   <section id="whyUs" class="pt-16 pb-4">
     <div class="container mx-auto flex flex-col gap-10">
       <div class="section-title text-center">
-        <h2 class="page-title">Mengapa WCS</h2>
-        <p>Dengan pengalaman lebih dari 20 tahun, PT Wahana Ciptasinatria hadir bukan sekadar sebagai penyedia teknologi, tetapi sebagai mitra strategis bagi bisnis Anda</p>
+        <h2 class="page-title">Why Us</h2>
+        <p>With over 20 years of experience, PT Wahana Ciptasinatria is more than just a technology provider</p>
       </div>
       <div class="grid lg:grid-cols-3 gap-1">
         <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg lg:rounded-r-none lg:rounded-l-lg">
-          <img src="../images/icons/ic_calendar.svg" alt="berpengalaman" class="w-8 lg:w-12">
-          <div>
-            <h3>30+ Tahun Pengalaman</h3>
-            <p>Lebih dari tiga dekade membangun reputasi melalui inovasi dan solusi yang berfokus pada kebutuhan pelanggan</p>
-          </div>
+          <img src="../images/icons/ic_calendar.svg" alt="experienced" class="w-8 lg:w-12">
+          <div><h3>30+ Years of Experience</h3><p>For over 30 years, we&rsquo;ve built a reputation for innovation, and customer-focused solutions</p></div>
         </div>
         <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg lg:rounded-none">
-          <img src="../images/icons/ic_people.svg" alt="layanan" class="w-8 lg:w-12">
-          <div>
-            <h3>70+ Spesialis</h3>
-            <p>Didukung oleh sekitar 70 tenaga ahli dan konsultan berpengalaman di bidang teknologi</p>
-          </div>
+          <img src="../images/icons/ic_people.svg" alt="services" class="w-8 lg:w-12">
+          <div><h3>70+ Specialists</h3><p>Approximately 70 technology specialists and consulting</p></div>
         </div>
         <div class="bg-gray-100 p-6 flex items-start gap-4 rounded-lg lg:rounded-l-none lg:rounded-r-lg">
-          <img src="../images/icons/ic_project.svg" alt="proyek" class="w-8 md:w-12">
-          <div>
-            <h3>300+ Proyek</h3>
-            <p>Telah menyelesaikan lebih dari 300 proyek di berbagai sektor di Indonesia</p>
-          </div>
+          <img src="../images/icons/ic_project.svg" alt="project" class="w-8 md:w-12">
+          <div><h3>300+ Projects</h3><p>More than 300 successful projects in Indonesia</p></div>
         </div>
       </div>
     </div>
@@ -399,25 +287,19 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    // Tab functionality
     const tabs = document.querySelectorAll('.tab-btn');
     const panels = document.querySelectorAll('.tab-panel');
-
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
         tabs.forEach(t => t.classList.remove('bg-primary', 'text-white', 'hover:text-white'));
         tabs.forEach(t => t.classList.add('text-gray-600', 'bg-[#F5F5F5]', 'hover:text-primary'));
         panels.forEach(p => p.classList.add('hidden'));
-
         tab.classList.add('bg-primary', 'text-white', 'hover:text-white');
         tab.classList.remove('text-gray-600', 'hover:text-primary');
-
         const target = tab.dataset.tab;
         document.getElementById(target).classList.remove('hidden');
       });
     });
-
-    // Activate tab from URL query param (e.g. ?tab=application)
     const urlParams = new URLSearchParams(window.location.search);
     const tabParam = urlParams.get('tab');
     if (tabParam) {
@@ -431,8 +313,6 @@
         document.getElementById(tabParam).classList.remove('hidden');
       }
     }
-
-    // Mobile menu toggle
     const btn = document.getElementById('menu-toggle');
     const menu = document.getElementById('mobile-menu');
     if (btn && menu) {
@@ -441,38 +321,26 @@
         document.body.classList.toggle('overflow-hidden');
       });
     }
-
-    // Swiper - client logo carousel
     document.addEventListener('DOMContentLoaded', function() {
       const clientSwiperEl = document.querySelector('.clientSwiper');
       if (clientSwiperEl && typeof Swiper !== 'undefined') {
         const clientSwiper = new Swiper('.clientSwiper', {
-          slidesPerView: 'auto',
-          spaceBetween: 16,
-          loop: true,
-          loopedSlides: 8,
-          autoplay: { delay: 1500, disableOnInteraction: false },
-          speed: 800,
+          slidesPerView: 'auto', spaceBetween: 16, loop: true, loopedSlides: 8,
+          autoplay: { delay: 1500, disableOnInteraction: false }, speed: 800,
         });
         clientSwiperEl.addEventListener('mouseenter', () => clientSwiper.autoplay.stop());
         clientSwiperEl.addEventListener('mouseleave', () => clientSwiper.autoplay.start());
       }
     });
-
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
         if (href === '#') return;
         const target = document.querySelector(href);
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
       });
     });
   </script>
-
-  <script src="../js/footer-id.js"></script>
+  <script src="../js/footer-dark.js"></script>
 </body>
 </html>

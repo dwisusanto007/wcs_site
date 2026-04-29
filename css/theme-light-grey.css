@@ -1,0 +1,71 @@
+/* ============================================
+   THEME: Light Grey
+   Background abu-abu muda, modern & elegan
+   ============================================ */
+
+/* Body */
+body.theme-light-grey {
+  background-color: #F0F1F3;
+  color: #4A4A4A;
+}
+
+/* Header */
+body.theme-light-grey header {
+  background-color: #FFFFFF;
+  border-bottom-color: #E0E0E0;
+}
+
+/* Hero section */
+body.theme-light-grey #homeBanner {
+  background-color: #F0F1F3;
+}
+
+/* Tab inactive */
+body.theme-light-grey .tab-btn {
+  background-color: #E4E5E7 !important;
+}
+body.theme-light-grey .tab-btn.active,
+body.theme-light-grey .tab-btn[style*="bg-primary"] {
+  background-color: rgb(162 28 33) !important;
+}
+
+/* Tab content border */
+body.theme-light-grey .tab-content {
+  background-color: #FFFFFF;
+  border-color: #D5D7DA;
+}
+
+/* Why Us cards */
+body.theme-light-grey #whyUs .bg-gray-100 {
+  background-color: #E4E5E7;
+}
+
+/* Client carousel slides */
+body.theme-light-grey .clientSwiper .swiper-slide {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* Footer */
+body.theme-light-grey footer {
+  background-color: #E4E5E7;
+}
+body.theme-light-grey footer .footer-bottom {
+  border-top-color: rgba(0,0,0,0.1);
+}
+
+/* Section backgrounds alternating */
+body.theme-light-grey #solutionServices {
+  background-color: #F0F1F3;
+}
+body.theme-light-grey #featured-stories {
+  background-color: #E8E9EB;
+}
+body.theme-light-grey #strategicAlliances {
+  background-color: #FFFFFF;
+}
+
+/* Mobile menu */
+body.theme-light-grey #mobile-menu {
+  background-color: #FFFFFF;
+}

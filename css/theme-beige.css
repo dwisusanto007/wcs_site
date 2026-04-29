@@ -1,0 +1,97 @@
+/* ============================================
+   THEME: Beige / Cream
+   Nuansa hangat, ramah, dan premium
+   ============================================ */
+
+/* Body */
+body.theme-beige {
+  background-color: #FAF6F1;
+  color: #4A4039;
+}
+
+/* Header */
+body.theme-beige header {
+  background-color: #FFFDF9;
+  border-bottom-color: #E8DFD4;
+}
+
+/* Hero section */
+body.theme-beige #homeBanner {
+  background-color: #FAF6F1;
+}
+
+/* Headings warm tint */
+body.theme-beige h1,
+body.theme-beige h2,
+body.theme-beige h3,
+body.theme-beige h4,
+body.theme-beige h5,
+body.theme-beige h6 {
+  color: #3B2F24;
+}
+
+body.theme-beige .section-title {
+  color: #3B2F24;
+}
+
+/* Tab inactive */
+body.theme-beige .tab-btn {
+  background-color: #F0E8DD !important;
+  color: #6B5B4E !important;
+}
+body.theme-beige .tab-btn:hover {
+  color: rgb(162 28 33) !important;
+}
+
+/* Tab content border */
+body.theme-beige .tab-content {
+  background-color: #FFFDF9;
+  border-color: #E0D5C7;
+}
+
+/* Why Us cards */
+body.theme-beige #whyUs .bg-gray-100 {
+  background-color: #F0E8DD;
+}
+
+/* Client carousel slides */
+body.theme-beige .clientSwiper .swiper-slide {
+  background-color: #FFFDF9 !important;
+  box-shadow: 0 1px 4px rgba(80,60,30,0.06);
+}
+
+/* Footer */
+body.theme-beige footer {
+  background-color: #EDE5DA;
+}
+body.theme-beige footer .footer-heading {
+  color: #3B2F24;
+}
+body.theme-beige footer .footer-link {
+  color: rgba(59, 47, 36, 0.65);
+}
+body.theme-beige footer .footer-link:hover {
+  color: #3B2F24;
+}
+body.theme-beige footer .footer-bottom {
+  border-top-color: rgba(59, 47, 36, 0.12);
+}
+body.theme-beige footer .footer-copyright {
+  color: rgba(59, 47, 36, 0.5);
+}
+
+/* Section backgrounds alternating */
+body.theme-beige #solutionServices {
+  background-color: #FAF6F1;
+}
+body.theme-beige #featured-stories {
+  background-color: #F3ECE3;
+}
+body.theme-beige #strategicAlliances {
+  background-color: #FFFFFF;
+}
+
+/* Mobile menu */
+body.theme-beige #mobile-menu {
+  background-color: #FFFDF9;
+}

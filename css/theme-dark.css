@@ -1,0 +1,292 @@
+/* ============================================
+   THEME: Dark Mode — "Obsidian & Gold"
+   Luxury dark palette with warm gold accents
+   Inspired by premium brand aesthetics
+   ============================================
+
+   COLOR PALETTE:
+   ──────────────────────────────────────────
+   Background (deepest)  : #0D0D0D  Rich Black
+   Surface 1             : #161618  Onyx
+   Surface 2 (cards/hdr) : #1C1C1F  Dark Charcoal
+   Surface 3 (elevated)  : #252528  Graphite
+   Border / Divider      : #2E2E33  Subtle Edge
+   ──────────────────────────────────────────
+   Text Primary          : #F0ECE5  Soft White (warm)
+   Text Secondary        : #A8A29E  Warm Grey
+   Text Muted            : #78716C  Stone
+   ──────────────────────────────────────────
+   Accent Primary        : #C9A96E  Champagne Gold
+   Accent Hover          : #DFC08A  Bright Gold
+   ============================================ */
+
+/* ── Base ─────────────────────────────────── */
+body.theme-dark {
+  background-color: #0D0D0D;
+  color: #A8A29E;
+}
+
+/* ── Header ───────────────────────────────── */
+body.theme-dark header {
+  background-color: #1C1C1F !important;
+  border-bottom-color: #2E2E33 !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+body.theme-dark header nav a,
+body.theme-dark header nav button span {
+  color: #F0ECE5;
+}
+body.theme-dark header nav a:hover,
+body.theme-dark header nav button:hover {
+  color: #C9A96E !important;
+}
+body.theme-dark .header-logo span {
+  color: #F0ECE5;
+}
+
+/* ── Header Dropdown ──────────────────────── */
+body.theme-dark header .group > div {
+  background-color: #1C1C1F;
+  border: 1px solid #2E2E33;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+}
+body.theme-dark header .group > div a {
+  color: #A8A29E;
+}
+body.theme-dark header .group > div a:hover {
+  color: #C9A96E;
+  background-color: #252528;
+}
+
+/* ── Hero Section ─────────────────────────── */
+body.theme-dark #homeBanner {
+  background-color: #0D0D0D;
+}
+
+/* ── Typography ───────────────────────────── */
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark h3,
+body.theme-dark h4,
+body.theme-dark h5,
+body.theme-dark h6 {
+  color: #F0ECE5;
+}
+body.theme-dark .section-title {
+  color: #F0ECE5;
+}
+body.theme-dark .section-title p,
+body.theme-dark section p {
+  color: #A8A29E;
+}
+
+/* ── Tabs (inactive) ──────────────────────── */
+body.theme-dark .tab-btn {
+  background-color: #1C1C1F !important;
+  color: #78716C !important;
+  border: 1px solid #2E2E33;
+  transition: all 0.2s ease;
+}
+body.theme-dark .tab-btn:hover {
+  color: #C9A96E !important;
+  border-color: #C9A96E;
+  background-color: #252528 !important;
+}
+
+/* ── Tab Content ──────────────────────────── */
+body.theme-dark .tab-content {
+  background-color: #161618;
+  border-color: #2E2E33;
+}
+body.theme-dark .tab-panel h3 {
+  color: #F0ECE5;
+}
+body.theme-dark .tab-panel h4 {
+  color: #DFC08A;
+}
+body.theme-dark .tab-panel .text-gray-600,
+body.theme-dark .tab-panel .text-gray-700 {
+  color: #A8A29E !important;
+}
+body.theme-dark .tab-panel ul {
+  color: #A8A29E;
+}
+
+/* ── Why Us Cards ─────────────────────────── */
+body.theme-dark #whyUs .bg-gray-100 {
+  background-color: #1C1C1F;
+  border: 1px solid #2E2E33;
+}
+body.theme-dark #whyUs h3 {
+  color: #F0ECE5;
+}
+body.theme-dark #whyUs p {
+  color: #A8A29E;
+}
+
+/* ── Client Carousel ──────────────────────── */
+body.theme-dark .clientSwiper .swiper-slide {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+
+/* ── Strategic Alliances (keep light bg) ──── */
+body.theme-dark #strategicAlliances {
+  background-color: #FFFFFF;
+}
+body.theme-dark #strategicAlliances .section-title {
+  color: #303030;
+}
+body.theme-dark #strategicAlliances .section-title p {
+  color: #5A5A5A;
+}
+body.theme-dark #strategicAlliances h2 {
+  color: #303030;
+}
+body.theme-dark #strategicAlliances img {
+  filter: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+body.theme-dark #strategicAlliances img:hover {
+  opacity: 1;
+}
+
+/* ── Footer ───────────────────────────────── */
+body.theme-dark footer {
+  background-color: #161618 !important;
+  color: #A8A29E;
+  border-top: 1px solid #2E2E33;
+}
+body.theme-dark footer .footer-heading {
+  color: #C9A96E;
+}
+body.theme-dark footer .footer-link {
+  color: rgba(240, 236, 229, 0.5);
+}
+body.theme-dark footer .footer-link:hover {
+  color: #C9A96E;
+  opacity: 1;
+}
+body.theme-dark footer .footer-divider {
+  border-color: #2E2E33;
+}
+body.theme-dark footer .footer-bottom {
+  border-top-color: #2E2E33;
+}
+body.theme-dark footer .footer-copyright {
+  color: #78716C;
+}
+body.theme-dark footer .footer-icon-sm {
+  filter: brightness(0) invert(0.78) sepia(0.3) saturate(1.2) hue-rotate(5deg);
+  opacity: 0.6;
+}
+body.theme-dark footer .footer-logo {
+  filter: brightness(0) invert(0.9);
+  opacity: 0.85;
+}
+
+/* ── Section Backgrounds ──────────────────── */
+body.theme-dark #solutionServices {
+  background-color: #0D0D0D;
+}
+body.theme-dark #featured-stories {
+  background-color: #161618;
+}
+
+/* ── Mobile Menu ──────────────────────────── */
+body.theme-dark #mobile-menu {
+  background-color: #1C1C1F !important;
+  border-top-color: #2E2E33;
+}
+body.theme-dark #mobile-menu a {
+  color: #A8A29E;
+}
+body.theme-dark #mobile-menu a:hover {
+  color: #C9A96E;
+}
+body.theme-dark #mobile-menu .border-b {
+  border-color: #2E2E33;
+}
+body.theme-dark #mobile-menu details {
+  color: #A8A29E;
+}
+body.theme-dark #mobile-menu details summary:hover {
+  color: #C9A96E;
+}
+body.theme-dark #mobile-menu .hover\:bg-gray-100:hover {
+  background-color: #252528 !important;
+}
+body.theme-dark #menu-toggle svg {
+  color: #F0ECE5;
+}
+
+/* ── Primary / Brand Colors ───────────────── *
+   Di dark mode, merah diganti gold supaya
+   tidak nabrak dengan background gelap.
+   Merah hanya muncul tipis di text-primary.
+   ─────────────────────────────────────────── */
+body.theme-dark .bg-primary {
+  background-color: #C9A96E !important;
+  color: #0D0D0D !important;
+}
+body.theme-dark .text-primary {
+  color: #C9A96E !important;
+}
+body.theme-dark .btn-primary {
+  background-color: #C9A96E;
+  color: #0D0D0D;
+  box-shadow: 0 2px 12px rgba(201, 169, 110, 0.2);
+  transition: all 0.2s ease;
+}
+body.theme-dark .btn-primary:hover {
+  background-color: #DFC08A;
+  color: #0D0D0D;
+  box-shadow: 0 4px 16px rgba(201, 169, 110, 0.35);
+}
+
+/* ── Language Switcher ────────────────────── */
+body.theme-dark .text-gray-300 {
+  color: #78716C !important;
+}
+
+/* ── Scrollbar (Webkit) ───────────────────── */
+body.theme-dark::-webkit-scrollbar {
+  width: 8px;
+}
+body.theme-dark::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+body.theme-dark::-webkit-scrollbar-thumb {
+  background: #2E2E33;
+  border-radius: 4px;
+}
+body.theme-dark::-webkit-scrollbar-thumb:hover {
+  background: #3A3A40;
+}
+
+/* ── Selection ────────────────────────────── */
+body.theme-dark ::selection {
+  background-color: rgba(201, 169, 110, 0.3);
+  color: #F0ECE5;
+}
+
+/* ── Subtle Gold Accent Line (decorative) ── */
+body.theme-dark .content-title {
+  color: #F0ECE5;
+}
+body.theme-dark .page-title {
+  color: #F0ECE5;
+}
+
+/* ── Banner Title ─────────────────────────── */
+body.theme-dark .banner-title {
+  color: #F0ECE5;
+}
+
+/* ── Theme Switcher Bar ───────────────────── */
+body.theme-dark .theme-switcher-bar {
+  background-color: #161618;
+  border-bottom: 1px solid #2E2E33;
+}
