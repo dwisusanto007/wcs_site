@@ -1,0 +1,872 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   CSS Variables — Theme defaults (overridden by DB values in layout)
+   ============================================ */
+:root {
+  --global-primary: #A21C21;
+  --global-secondary: #0B3955;
+  --global-third: #303030;
+  --global-primary-hover: #711519;
+  --global-body-text: #5A5A5A;
+  --global-background: #FFFFFF;
+  --hero-title-color: var(--global-third);
+  --hero-text-color: var(--global-body-text);
+  --hero-button-bg: #A21C21;
+  --hero-button-text: #FFFFFF;
+  --tabs-active-bg: #A21C21;
+  --tabs-active-text: #FFFFFF;
+  --tabs-inactive-bg: #F5F5F5;
+  --tabs-inactive-text: #4B5563;
+  --footer-background: #FFFFFF;
+  --footer-heading-color: var(--global-secondary);
+  --footer-text-color: var(--global-body-text, #5A5A5A);
+  --header-background: #FFFFFF;
+  --header-nav-color: #111827;
+  --header-nav-hover: #A21C21;
+}
+
+/* ============================================
+   Custom CSS — migrated from WCS static site
+   ============================================ */
+
+/* --- Font --- */
+.font-inter {
+  font-family: Inter, sans-serif;
+}
+
+/* --- Animations & Keyframes --- */
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 1s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+/* --- Animation Delay Classes --- */
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  border-radius: 0.25rem;
+  background-color: var(--global-primary);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--global-primary-hover);
+}
+
+.btn-primary-outline {
+  border-width: 1px;
+  border-color: var(--global-primary);
+  background-color: #ffffff;
+  color: var(--global-primary);
+  border-radius: 0.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.btn-primary-outline:hover {
+  background-color: var(--global-primary-hover);
+  color: #ffffff;
+}
+
+/* --- Typography — Design System --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--global-third);
+}
+
+h1,
+.page-title,
+.banner-title {
+  font-size: 1.25rem;
+  line-height: 28px;
+}
+
+@media (min-width: 768px) {
+  h1,
+  .page-title,
+  .banner-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h2,
+.content-title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  h2,
+  .content-title {
+    font-size: 1.25rem;
+    line-height: 28px;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* --- Utilities --- */
+.h-fill {
+  min-height: calc(100vh - 50px);
+}
+
+.section-spacing {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.link-primary {
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
+  color: var(--global-primary);
+}
+
+.link-primary:hover {
+  color: var(--global-primary-hover);
+}
+
+/* --- Section Title --- */
+section .section-title {
+  color: var(--global-third);
+}
+
+/* --- Tab Buttons --- */
+.tab-btn:focus {
+  outline: none;
+}
+.tab-btn:focus-visible {
+  outline: 2px solid var(--global-primary);
+  outline-offset: 2px;
+}
+
+/* --- Hero Banner --- */
+#homeBanner .banner-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 900;
+  line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  #homeBanner .banner-title {
+    margin-bottom: 1rem;
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+#homeBanner .btn-primary {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#homeBanner {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  #homeBanner {
+    min-height: 495px;
+  }
+}
+
+/* --- Body --- */
+body {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--global-body-text);
+}
+
+/* --- Header --- */
+header {
+  min-height: 4rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: var(--global-third);
+}
+
+@media (min-width: 768px) {
+  .header-logo img {
+    height: 50px;
+  }
+}
+
+section {
+  scroll-margin-top: 82px;
+}
+
+section p {
+  margin-bottom: 0.5rem;
+}
+
+header nav > a:hover,
+header nav button:hover {
+  color: var(--global-primary);
+}
+
+header nav > a.active,
+header nav button.active {
+  color: var(--global-primary);
+}
+
+#mobile-menu a.active {
+  color: var(--global-primary);
+}
+
+details[open] summary svg {
+  transform: rotate(180deg);
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  color: var(--footer-text-color);
+}
+
+@media (min-width: 768px) {
+  footer {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+footer a:hover {
+  color: var(--global-secondary);
+  opacity: 0.75;
+}
+
+footer .footer-link {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+footer .footer-link:hover {
+  color: var(--global-secondary);
+  opacity: 1;
+}
+
+footer .footer-heading {
+  color: var(--global-secondary);
+}
+
+footer .footer-divider {
+  border-color: rgba(0, 0, 0, 0.15);
+  border-top-width: 1px;
+}
+
+footer .footer-bottom-border {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+footer .footer-copyright {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+footer .footer-icon {
+  filter: brightness(0);
+  opacity: 0.6;
+}
+
+footer .footer-icon-sm {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  filter: brightness(0);
+  opacity: 0.6;
+}
+
+footer .footer-icon-top {
+  margin-top: 2px;
+}
+
+footer .footer-logo {
+  height: 3.5rem;
+  filter: none;
+}
+
+footer .footer-cols {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  footer .footer-cols {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+footer .footer-col-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+footer .footer-col-address {
+  flex: 1;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+footer .footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: 1rem;
+  font-size: 0.75rem;
+}
+
+/* --- Link Animations --- */
+.link-animate {
+  position: relative;
+  display: inline-block;
+}
+
+.link-animate:hover {
+  color: var(--global-primary);
+}
+
+.link-animate::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-animate:hover::after {
+  transform: scaleX(1);
+}
+
+.link-primary-dark {
+  color: var(--global-primary);
+}
+
+.link-primary-dark:hover {
+  color: var(--global-primary-hover);
+}
+
+.link-dark-primary {
+  color: var(--global-third);
+}
+
+.link-dark-primary:hover {
+  color: var(--global-primary);
+}
+
+/* --- Client Logo Swiper --- */
+.clientSwiper {
+  height: 160px;
+}
+
+.clientSwiper .swiper-wrapper {
+  align-items: center !important;
+  height: 100%;
+}
+
+.clientSwiper .swiper-slide {
+  height: 140px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientSwiper .swiper-slide img {
+  max-height: 140px;
+  width: auto;
+}
+
+/* --- Custom Swiper Navigation --- */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 2.5rem !important;
+  width: 2.5rem !important;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #1E1E1E;
+  background-color: #ffffff;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  border-color: var(--global-primary);
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  height: 1.25rem !important;
+  width: 1.25rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--global-primary) !important;
+}
+
+/* --- Custom Bullet Lists --- */
+ul.space-y-1.text-gray-700 {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+ul.space-y-1.text-gray-700 > li {
+  display: list-item;
+}
+
+/* ============================================
+   Contact Form CSS — from contact-form.css
+   ============================================ */
+
+/* Hero Banner */
+.contact-hero-banner {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%),
+              url('../images/banners/bg_banner_left.png') left center no-repeat,
+              url('../images/banners/bg_banner_right.png') right center no-repeat;
+  background-size: auto, contain, contain;
+  background-color: #667eea;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.contact-hero-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Contact Us Page Layout */
+.contact-us-wrapper {
+  width: 100%;
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.contact-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* Left: Contact Form Section */
+.contact-form-section {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-wrapper {
+  width: 100%;
+}
+
+/* Right: Contact Information Panel */
+.contact-info-section {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.contact-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: #f0f2ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #667eea;
+}
+
+.contact-info-details {
+  flex: 1;
+}
+
+.contact-info-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+.contact-info-link {
+  display: block;
+  color: var(--footer-text-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  transition: color 0.2s;
+}
+
+.contact-info-link:hover {
+  color: #667eea;
+  text-decoration: underline;
+}
+
+/* Form Styles */
+.contact-us-form {
+  width: 100%;
+}
+
+.contact-us-form .form-item {
+  margin-bottom: 1.5rem;
+}
+
+.contact-us-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--footer-text-color);
+  font-size: 0.95rem;
+}
+
+.contact-us-form .form-required {
+  color: #dc3545;
+  margin-left: 0.25rem;
+}
+
+.contact-us-form input[type="text"],
+.contact-us-form input[type="email"],
+.contact-us-form input[type="tel"],
+.contact-us-form select,
+.contact-us-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.contact-us-form input[type="text"]:focus,
+.contact-us-form input[type="email"]:focus,
+.contact-us-form input[type="tel"]:focus,
+.contact-us-form select:focus,
+.contact-us-form textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.contact-us-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-us-form .description {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+/* Radio buttons and checkboxes */
+.contact-us-form .form-type-radio,
+.contact-us-form .form-type-checkbox {
+  margin-bottom: 0.75rem;
+}
+
+.contact-us-form .form-type-radio label,
+.contact-us-form .form-type-checkbox label {
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-us-form input[type="radio"],
+.contact-us-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+/* Privacy checkbox special styling */
+.contact-us-form .form-item-privacy-accepted {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.contact-us-form .form-item-privacy-accepted label {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Submit button */
+.contact-form-submit {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  border: none;
+  padding: 0.875rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 1rem;
+}
+
+.contact-form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.contact-form-submit:active {
+  transform: translateY(0);
+}
+
+.contact-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Error messages */
+.contact-us-form .form-item--error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.contact-us-form .form-item--error input,
+.contact-us-form .form-item--error select,
+.contact-us-form .form-item--error textarea {
+  border-color: #dc3545;
+}
+
+/* Success/Error messages */
+.messages {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.messages--status {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.messages--error {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+.messages--warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+}
+
+/* Responsive Design — Contact */
+@media (max-width: 992px) {
+  .contact-hero-title {
+    font-size: 2rem;
+  }
+
+  .contact-hero-description {
+    font-size: 1rem;
+  }
+
+  .contact-us-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-section {
+    order: 2;
+  }
+
+  .contact-form-section {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero-banner {
+    padding: 3rem 1rem;
+  }
+
+  .contact-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-us-wrapper {
+    padding: 2rem 0.5rem;
+  }
+
+  .contact-form-section,
+  .contact-info-section {
+    padding: 1.5rem;
+  }
+
+  .contact-form-submit {
+    width: 100%;
+  }
+}

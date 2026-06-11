@@ -8,5 +8,23 @@ Thumbs.db
 *.swp
 *.swo
 *~
-
 .kiro
+
+# Claude Code memory
+.claude/
+
+# Deploy — generated zips
+deploy/*.zip
+
+# Deploy laravel-app — server credentials & generated files
+deploy/laravel-app/.env
+deploy/laravel-app/.env.*
+deploy/laravel-app/vendor/
+deploy/laravel-app/node_modules/
+deploy/laravel-app/storage/logs/
+deploy/laravel-app/storage/framework/cache/
+deploy/laravel-app/storage/framework/sessions/
+deploy/laravel-app/storage/framework/views/
+deploy/laravel-app/storage/*.key
+deploy/laravel-app/.phpunit.result.cache
+deploy/laravel-app/.phpunit.cache/
