@@ -33,7 +33,7 @@
         </div>
 
         {{-- Desktop Navigation --}}
-        <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold text-gray-900 relative">
+        <nav class="hidden lg:flex items-center space-x-2 lg:space-x-6 font-semibold relative" style="color: var(--header-nav-color, #111827);">
             <a href="{{ route($locale === 'id' ? 'id.about' : 'about') }}" class="md:px-1 {{ in_array($currentRoute, ['about', 'id.about']) ? 'text-primary' : '' }}">{{ __('nav.about_us') }}</a>
 
             {{-- Solution & Services Dropdown --}}

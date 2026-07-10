@@ -348,7 +348,7 @@ footer a:hover {
 }
 
 footer .footer-link {
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--footer-text-color, rgba(0, 0, 0, 0.6));
   text-decoration: none;
   transition: color 0.2s, opacity 0.2s;
 }
